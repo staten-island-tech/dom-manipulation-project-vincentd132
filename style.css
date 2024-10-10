@@ -1,0 +1,14 @@
+html, 
+body {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+}
+
+
+h1{font-size: 60px;
+
+}
