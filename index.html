@@ -1,26 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Song Input Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Song Card Generator</h1>
-    
-    <h2>Song Name</h2>
-    <form id="songname">
-        <input type="text"> 
-    </form>
+    <div class="container">
+        <h1>Song Input</h1>
+        <form id="form">
+            <div class="input">
+                <label for="songname">Song Name:</label>
+                <input type="text" name="songname" id="songname" >
+            </div>
+            <div class="input">
+                <label for="songimg">Song Image URL:</label>
+                <input type="text" name="songimg" id="songimg" >
+            </div>
+            <button type="submit" id="btn">Submit</button>
+        </form>
 
-    <h2>Song Image</h2>
-    <form id="songimg">
-        <input type="text">
-    </form>
-
-    <button id="button">Search</button>
-
-
-<script src="index.js"></script>
+        <div class="pop" id="pop">
+            <div class="popup">
+                <span class="close-btn">&times;</span>
+                <h1 id="card-header"></h1>
+                <img id="card-image" src="" alt="Song Image" />
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
